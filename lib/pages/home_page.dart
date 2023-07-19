@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
             ),
             Row(
               children: [
-                Expanded(
+                Expanded( 
                   child: CardWidget(
                     box: ItemClass(
                         title: 'Shopping', imagePath: 'images/shopping.png'),
