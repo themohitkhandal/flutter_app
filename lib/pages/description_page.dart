@@ -82,9 +82,9 @@ class _DescriptionPageState extends State<DescriptionPage> {
                 const SizedBox(
                   height: kHeight10,
                 ),
-                const Text(
-                  description,
-                  style: TextStyle(
+                Text(
+                  widget.box.desc,
+                  style: const TextStyle(
                     fontSize: 18,
                   ),
                   textAlign: TextAlign.center,

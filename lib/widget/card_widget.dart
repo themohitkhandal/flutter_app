@@ -25,17 +25,23 @@ class CardWidget extends StatelessWidget {
       child: Card(
         child: SizedBox(
             width: double.infinity,
-            child: Column(
-              children: [
-                const SizedBox(height: 4),
-                Image.asset(box.imagePath),
-                Text(
-                  box.title,
-                  style: const TextStyle(
-                      fontSize: kHeight20, fontWeight: FontWeight.bold),
-                ),
-                Text("This is ${box.title} description")
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 18.0),
+              child: Column(
+                children: [
+                  const SizedBox(height: 4),
+                  Image.asset(box.imagePath),
+                  Text(
+                    box.title,
+                    style: const TextStyle(
+                        fontSize: kHeight20, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'Open to learn about ${box.title}',
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
             )),
       ),
     );

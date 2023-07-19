@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/class/card_class.dart';
+import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/widget/card_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,27 +16,27 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             CardWidget(
-              box: ItemClass(title: 'Singing', imagePath: 'images/sing.png'),
+              box: ItemClass(title: 'Singing', imagePath: 'images/sing.png',  desc: singing),
             ),
             Row(
               children: [
                 Expanded( 
                   child: CardWidget(
                     box: ItemClass(
-                        title: 'Shopping', imagePath: 'images/shopping.png'),
+                        title: 'Shopping', imagePath: 'images/shopping.png', desc: shopping),
                   ),
                 ),
                 Expanded(
                   child: CardWidget(
                     box: ItemClass(
-                        title: 'Influencer', imagePath: 'images/influencer.png'),
+                        title: 'Influencer', imagePath: 'images/influencer.png' ,desc: influencer),
                   ),
                 ),
               ],
             ),
             CardWidget(
               box: ItemClass(
-                  title: 'Photography', imagePath: 'images/photography.png'),
+                  title: 'Photography', imagePath: 'images/photography.png', desc: photography),
             ),
           ],
         ),
