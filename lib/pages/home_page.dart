@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/class/card_class.dart';
-import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/widget/card_widget.dart';
 
 class HomePage extends StatelessWidget {

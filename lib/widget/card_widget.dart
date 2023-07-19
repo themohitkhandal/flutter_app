@@ -23,7 +23,7 @@ class CardWidget extends StatelessWidget {
         );
       },
       child: Card(
-        child: Container(
+        child: SizedBox(
             width: double.infinity,
             child: Column(
               children: [
