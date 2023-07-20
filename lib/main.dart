@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
                 seedColor: Colors.blueGrey,
                 brightness: isDark ? Brightness.dark : Brightness.light),
             useMaterial3: true,
+            fontFamily: 'PlayfairDisplay'
           ),
           home: const LoginPage(),
         );

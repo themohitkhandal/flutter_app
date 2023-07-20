@@ -16,27 +16,27 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             CardWidget(
-              box: ItemClass(title: 'Singing', imagePath: 'images/sing.png',  desc: singing),
+              box: ItemClass(title: 'Singing', imagePath: 'assets/images/sing.png',  desc: singing),
             ),
             Row(
               children: [
                 Expanded( 
                   child: CardWidget(
                     box: ItemClass(
-                        title: 'Shopping', imagePath: 'images/shopping.png', desc: shopping),
+                        title: 'Shopping', imagePath: 'assets/images/shopping.png', desc: shopping),
                   ),
                 ),
                 Expanded(
                   child: CardWidget(
                     box: ItemClass(
-                        title: 'Influencer', imagePath: 'images/influencer.png' ,desc: influencer),
+                        title: 'Influencer', imagePath: 'assets/images/influencer.png' ,desc: influencer),
                   ),
                 ),
               ],
             ),
             CardWidget(
               box: ItemClass(
-                  title: 'Photography', imagePath: 'images/photography.png', desc: photography),
+                  title: 'Photography', imagePath: 'assets/images/photography.png', desc: photography),
             ),
           ],
         ),
