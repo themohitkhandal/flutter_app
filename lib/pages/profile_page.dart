@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/core/notifier.dart';
+import 'package:flutter_app/pages/login_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -10,6 +11,20 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return const LoginPage();
+                    },
+                  ),
+                );
+              },
+              icon: const Icon(Icons.logout))
+        ],
       ),
       body: const Column(
         children: [
@@ -32,7 +47,7 @@ class ProfilePage extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.web),
             title: Text('themohitkhandal.com'),
-          )
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
